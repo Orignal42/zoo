@@ -1,6 +1,7 @@
 <?php
 class Enclos{
-private $sale=false;
-
+    protected $type;
+    protected $sale=false;
+    
 
 }

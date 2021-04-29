@@ -1,7 +1,7 @@
 <?php
 
 class Ours extends Mammifere{
-    private $gestation=180;
+    protected $gestation=180;
 
 
 

@@ -1,7 +1,7 @@
 <?php
 class Aquarium extends Enclos{
  
-    private $nombremax=50;
-    private $nombreactuel=62;
+    protected $nombremax=50;
+    protected $nombreactuel=62;
  
 }

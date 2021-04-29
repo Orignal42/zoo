@@ -1,7 +1,7 @@
 <?php
 class Cagetigre extends Enclos{
-    private $nombremax=3;
-    private $nombreactuel=1;
+    protected $nombremax=3;
+    protected $nombreactuel=1;
  
 
  

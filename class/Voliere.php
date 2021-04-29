@@ -1,7 +1,7 @@
 <?php
 class Voliere extends Enclos{
-    private $nombremax=10;
-    private $nombreactuel=4;
+    protected $nombremax=10;
+    protected $nombreactuel=4;
 
     
 }

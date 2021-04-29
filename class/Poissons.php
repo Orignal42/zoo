@@ -1,7 +1,7 @@
 <?php
 
 class Poissons extends Other{
-private $swim;
-private $gestation=15;
+protected $swim;
+protected $gestation=15;
 
 }

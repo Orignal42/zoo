@@ -1,23 +1,28 @@
 <?php
 
 class Animaux{
-private $name;
-private $namespecie;
-private $poids;
-private $taille;
-private $age;
-private $sex;
-private $ill=false;
-private $sleep=false;
-private $hungry=false;
+protected $name;
+protected $namespecie;
+protected $poids;
+protected $taille;
+protected $age;
+protected $sex;
+protected $crie;
+protected $loco;
+protected $ill=false;
+protected $sleep=false;
+protected $hungry=false;
 
           
-    public function __construct($name,$namespecie, $poids, $taille, $age, $sex){
+    public function __construct($name,$namespecie, $poids, $taille, $age, $sex,$crie,$loco){
         $this->name=$name;
         $this->namespecie=$namespecie;
         $this->poids=$poids;
         $this->taille=$taille;
         $this->age=$age;
+        $this->sex=$sex;
+        $this->crie=$crie;
+        $this->loco=$loco;
     }
 
         public function setName($name){
@@ -57,6 +62,32 @@ private $hungry=false;
             return $this->sex;
         }
 
+            public function setCrie($crie){
+        $this->crie=$crie;
+    }
+        public function getCrie(){
+            return $this->crie;
+    }
+        public function isIll($ill){
+            $this->ill=$ill;
+        }
+        public function getIll(){
+            return $this->ill;
+        }
+
+        public function isSleep($sleep){
+            $this->sleep=$sleep;
+        }
+        public function getSleep(){
+            return $this->sleep;
+        }
+        public function isHungry($hungry){
+            $this->hungry=$hungry;
+        }
+        public function getHungry(){
+            return $this->hungry;
+        }
+
 
         public function Ill(){
             if($this->ill==false){
@@ -68,8 +99,8 @@ private $hungry=false;
                 return "l'animal tourne en rond";
             }
         }
-        public function Hungry(){
-            if($this->sleep==false){
+        public function eat(){
+            if($this->hungry==false){
                 return "l'animal a le ventre tout rond";
             }
         }

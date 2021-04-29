@@ -4,31 +4,60 @@
    require 'class/'. $classname.'.php';
  }
   spl_autoload_register('chargerClasse');
+
+  $tigre = new Tigre ('Tigrou','Tigre','150','2.3','8','male','rugit','walk');
+  echo"<br>";
+  echo $tigre->getName();
+ echo"<br>";
+ echo $tigre->getNameSpecie();
+ echo"<br>";
+ echo $tigre->getPoids()."kg";
+ echo"<br>";
+ echo $tigre->getTaille()."m";
+ echo"<br>";
+ echo $tigre->getAge()."ans";
+ echo"<br>";
+ echo $tigre->getSex();
+ echo"<br>";
+ echo $tigre->getCrie();
+ echo"<br>";
+
+
+ $tigre = new Tigre ("Felindra","Tigre","120","2","5","female","rugit","walk");
+ echo"<br>";
+ echo $tigre->getName();
+ echo"<br>";
+ echo $tigre->getNameSpecie();
+ echo"<br>";
+ echo $tigre->getPoids()."kg";
+ echo"<br>";
+ echo $tigre->getTaille()."m";
+ echo"<br>";
+ echo $tigre->getAge()."ans";
+ echo"<br>";
+ echo $tigre->getSex();
+ echo"<br>";
+ echo $tigre->getCrie();
+ echo"<br>";
+
+ $aigle = new Aigle ("Capitain America","Aigle","10","1","2","male","glati", "fly");
+ echo"<br>";
+ echo $aigle->getName();
+ echo"<br>";
+ echo $aigle->getNameSpecie();
+ echo"<br>";
+ echo $aigle->getPoids()."kg";
+ echo"<br>";
+ echo $aigle->getTaille()."m";
+ echo"<br>";
+ echo $aigle->getAge()."ans";
+ echo"<br>";
+ echo $aigle->getSex();
+ echo"<br>";
+ echo $aigle->getCrie();
+ echo"<br>";
+
+ $employe=new Employe("Clara","female", "40")
+ 
  ?>
 
-
- <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Ajouter animeaux</title>
- </head>
- <body>
- <div class="container-form">
-      <form action="" method="post">
-          <div class="formulaire">
-            Name : <input type="text" name="nom" maxlength="240" style="margin-bottom: 10px;"/><br>
-            Namespecie : <input type="text" name="specie" maxlength="240" style="margin-bottom: 10px;"/><br>
-            Poids: <input type="text" name="poids" maxlength="240" style="margin-bottom: 10px;"/><br>
-            Taille : <input type="text" name="taille" maxlength="240" style="margin-bottom: 10px;"/><br>
-            Age : <input type="text" name="age" maxlength="240" style="margin-bottom: 10px;"/><br>
-            Sexe : <input type="text" name="sexe" maxlength="240" style="margin-bottom: 10px;"/><br>
-            <input type="submit"  name="question" style="margin-bottom: 10px">
-          </div>
-      </form>
-     
-  </div>
- </body>
- </html>

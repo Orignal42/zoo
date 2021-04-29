@@ -1,8 +1,8 @@
 <?php
 class Employe{
-private $name;
-private $age;
-private $sex;
+protected $name;
+protected $age;
+protected $sex;
 
 
 
@@ -32,21 +32,15 @@ public function __construct($name, $age, $sex){
         return $this->sex;
     }
  
-public function nourrir(){
+public function nourrir(){    
  
 }
 public function soigner(){
  
 }
 
-public function surveillerenclos(){
-    
-}
+
 public function nettoyer(){
-
-}
-
-public function delete(){
 
 }
  
