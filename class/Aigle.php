@@ -1,7 +1,7 @@
 <?php
 
-class Aigle extends Other{
-protected $fly;
+class Aigle extends Animaux{
+
 protected $gestation=45;
 
 

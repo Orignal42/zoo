@@ -9,12 +9,13 @@ protected $age;
 protected $sex;
 protected $crie;
 protected $loco;
+protected $repro;
 protected $ill=false;
 protected $sleep=false;
 protected $hungry=false;
 
           
-    public function __construct($name,$namespecie, $poids, $taille, $age, $sex,$crie,$loco){
+    public function __construct($name,$namespecie, $poids, $taille, $age, $sex,$crie,$loco,$repro){
         $this->name=$name;
         $this->namespecie=$namespecie;
         $this->poids=$poids;
@@ -23,6 +24,8 @@ protected $hungry=false;
         $this->sex=$sex;
         $this->crie=$crie;
         $this->loco=$loco;
+        $this->repro=$repro;
+
     }
 
         public function setName($name){
@@ -62,46 +65,62 @@ protected $hungry=false;
             return $this->sex;
         }
 
-            public function setCrie($crie){
+        public function setCrie($crie){
         $this->crie=$crie;
-    }
+        }
         public function getCrie(){
             return $this->crie;
-    }
-        public function isIll($ill){
-            $this->ill=$ill;
         }
-        public function getIll(){
+        public function setLoco($loco){
+        $this->loco=$loco;
+        }
+        public function getLoco(){
+            return $this->loco;
+        }
+        public function setRepro($repro){
+        $this->loco=$repro;
+        }   
+        public function getRepro(){
+            return $this->repro;
+        }
+        public function isIll(){
             return $this->ill;
         }
-
-        public function isSleep($sleep){
-            $this->sleep=$sleep;
+        public function setIll($ill){
+            $this->ill=$ill;
+            
         }
-        public function getSleep(){
+
+        public function isSleep(){
             return $this->sleep;
         }
-        public function isHungry($hungry){
-            $this->hungry=$hungry;
+        
+        public function setSleep($sleep){
+            $this->sleep=$sleep;
         }
-        public function getHungry(){
+        public function isHungry(){//function get
             return $this->hungry;
+           
+        }
+        public function setHungry($hungry){
+            $this->hungry=$hungry;
         }
 
 
         public function Ill(){
-            if($this->ill==false){
-                return "l'animal est en bonne santé";
+            if($this->isIll()){
+               $this->setSleep(false);
             }
         }
         public function Sleep(){
-            if($this->sleep==false){
-                return "l'animal tourne en rond";
+            if($this->isSleep()){
+               $this->setSleep(false);
             }
         }
         public function eat(){
-            if($this->hungry==false){
-                return "l'animal a le ventre tout rond";
+            if($this->isHungry()){
+               $this->setHungry(false);
+                
             }
         }
 

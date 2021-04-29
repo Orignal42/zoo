@@ -1,6 +1,6 @@
 <?php
 
-class Ours extends Mammifere{
+class Ours extends Animaux{
     protected $gestation=180;
 
 
