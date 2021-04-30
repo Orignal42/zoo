@@ -3,14 +3,15 @@ class Aquarium extends Enclos{
     
     protected $salinite;
     protected $profondeur; 
-    public function __construct($enclosname,$surface,$salinite,$profondeur){
-        $this->enclosname=$enclosname;
-        $this->surface=$surface;
-        $this->salinite=$salinite;
-        $this->profondeur=$profondeur;
-}
-public function setSalinite($name){
-    $this->name=$name;
+    public function __construct($nom, $superficie, $proprete, $nbAnimals, $nbMax, $profondeur, $salinite){
+
+       parent::__construct($nom, $superficie, $proprete, $nbAnimals, $nbMax);
+
+            $this->profondeur = $profondeur;
+            $this->salinite = $salinite;
+    }
+public function setSalinite($salinite){
+    $this->salinite=$salinite;
 }
 public function getSalinite(){
     return $this->salinite;

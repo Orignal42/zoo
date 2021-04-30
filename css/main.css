@@ -1,0 +1,45 @@
+body{
+ display: flex;
+ flex-flow: row;
+ align-items: center;
+ background-color: aliceblue;
+}
+
+ 
+
+.employe{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: black 1px solid;
+    background-color: pink;
+
+}
+
+.enclos{
+    display: flex;
+    width: 100%;
+
+flex-flow: row;
+}
+.tigre{
+    background-color: coral;
+    width: 20rem;
+    text-align: center;
+}
+.poisson{
+    background-color: cyan;
+    width: 20rem;
+    text-align: center;
+}
+
+.aigle{
+    background-color: darkgoldenrod;
+    width: 20rem;
+    text-align: center;
+}
+.ours{
+    background-color: brown;
+    width: 20rem;
+    text-align: center;
+}
